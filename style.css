@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	place-content: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.container {
+	width: 90vw;
+	height: 80vh;
+	display: flex;
+	gap: 1.5rem;
+}
+
+.panel {
+	flex: 0.5;
+	border-radius: 50px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: all 0.8s;
+	cursor: pointer;
+	position: relative;
+	color: white;
+}
+
+.panel h2 {
+	position: absolute;
+	bottom: 1rem;
+	left: 2rem;
+	display: none;
+}
+
+.panel:nth-child(1) {
+	background-image: url(./imgs/aaron-burden-wPy71r8Hi_s-unsplash.jpg);
+}
+
+.panel:nth-child(2) {
+	background-image: url(./imgs/cosmic-timetraveler-pYyOZ8q7AII-unsplash.jpg);
+}
+
+.panel:nth-child(3) {
+	background-image: url(./imgs/daria-tumanova-2oi3JDGB8Vo-unsplash.jpg);
+}
+
+.panel:nth-child(4) {
+	background-image: url(./imgs/johannes-plenio-1vzLW-ihJaM-unsplash.jpg);
+}
+
+.panel:nth-child(5) {
+	background-image: url(./imgs/johannes-plenio-DKix6Un55mw-unsplash.jpg);
+}
+
+.active {
+	flex: 6;
+}
+
+.active h2 {
+	display: inline;
+	overflow: hidden;
+	white-space: nowrap;
+}
